@@ -1,0 +1,32 @@
+{
+  "version": "v1.0.0",
+  "features": [
+    "semester",
+    "ipk",
+    "kehadiran_pct",
+    "jam_belajar_minggu",
+    "tugas_selesai_pct",
+    "kuis_avg",
+    "forum_aktif",
+    "partisipasi",
+    "beasiswa",
+    "ekstrakurikuler",
+    "sosek"
+  ],
+  "accuracy": 0.9167,
+  "f1_macro": 0.9035,
+  "silhouette": 0.1644,
+  "importance": {
+    "ipk": 0.2623,
+    "jam_belajar_minggu": 0.1876,
+    "kehadiran_pct": 0.1872,
+    "tugas_selesai_pct": 0.1259,
+    "kuis_avg": 0.0924,
+    "partisipasi": 0.0552,
+    "forum_aktif": 0.0434,
+    "semester": 0.0192,
+    "ekstrakurikuler": 0.0113,
+    "sosek": 0.0103,
+    "beasiswa": 0.0054
+  }
+}

@@ -1,0 +1,52 @@
+/* SIAP design tokens — patuhi design.md. LinkedIn-clean, tanpa gradient. */
+:root{
+  --bg:#F4F2EE; --card:#FFFFFF; --ink:#191919; --muted:#666666;
+  --line:#E8E5DF; --brand:#0A66C2; --brand-dark:#004182;
+  --ok:#057642; --warn:#B54708; --danger:#C92A2A;
+}
+html,body,[data-testid="stAppViewContainer"]{ background:var(--bg); }
+.block-container{ max-width:1128px; padding-top:1rem; }
+section[data-testid="stSidebar"]{ display:none; }
+
+/* topbar */
+.siap-topbar{
+  position:sticky; top:0; z-index:50; background:var(--card);
+  border-bottom:1px solid var(--line); margin:-1rem -2rem 1rem; padding:.6rem 2rem;
+  display:flex; align-items:center; gap:12px;
+}
+.siap-logo{ width:34px; height:34px; border-radius:6px; background:var(--brand);
+  color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; }
+.siap-search{ flex:1; max-width:340px; background:#EDF3F8; border-radius:6px;
+  padding:6px 12px; color:var(--muted); font-size:13px; }
+.siap-nav{ display:flex; gap:18px; font-size:13px; color:var(--muted); margin-left:auto; }
+.siap-nav b{ color:var(--ink); }
+
+/* cards */
+.siap-card{ background:var(--card); border:1px solid var(--line); border-radius:8px;
+  padding:16px; margin-bottom:12px; }
+.siap-banner{ height:56px; background:#DCE6F1; border-radius:8px 8px 0 0; margin:-16px -16px 0; }
+.siap-avatar{ width:72px; height:72px; border-radius:50%; border:2px solid #fff;
+  margin-top:-36px; background:#fff; object-fit:cover; }
+.siap-name{ font-size:16px; font-weight:700; color:var(--ink); margin:6px 0 2px; }
+.siap-headline{ font-size:13px; color:var(--muted); }
+.siap-metric{ font-size:20px; font-weight:700; font-variant-numeric:tabular-nums; }
+.siap-cap{ font-size:12px; color:var(--muted); }
+.siap-pill{ display:inline-block; font-size:12px; font-weight:600; border-radius:16px; padding:3px 10px; }
+.pill-ok{ background:#D8EBDD; color:var(--ok); }
+.pill-warn{ background:#FCEFC7; color:var(--warn); }
+.pill-danger{ background:#FBD9D9; color:var(--danger); }
+.siap-btn{ background:var(--brand); color:#fff !important; border-radius:16px;
+  padding:8px 18px; font-weight:600; font-size:14px; text-decoration:none; }
+.skill-track{ background:var(--line); border-radius:6px; height:6px; margin:4px 0 10px; }
+.skill-fill{ background:var(--brand); height:6px; border-radius:6px; }
+.rec-row{ display:flex; gap:10px; padding:10px 0; border-top:1px solid var(--line); font-size:13px; }
+.rec-badge{ min-width:34px; height:34px; border-radius:6px; background:#EDF3F8; color:var(--brand);
+  font-weight:700; display:flex; align-items:center; justify-content:center; }
+
+div[data-testid="column"] .siap-card{ height:100%; }
+
+@media (max-width:900px){
+  .siap-nav{ display:none; }
+  .siap-search{ max-width:none; }
+  .block-container{ padding-left:.8rem; padding-right:.8rem; }
+}
