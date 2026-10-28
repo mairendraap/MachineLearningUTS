@@ -1,6 +1,5 @@
 # SIAP — Sistem Insight & Rekomendasi Akademik
 
-Profil mahasiswa ala LinkedIn + ML (RandomForest + KMeans + Rekomendasi). Lihat `design.md` sebagai acuan tunggal.
 
 ## Struktur
 ```
